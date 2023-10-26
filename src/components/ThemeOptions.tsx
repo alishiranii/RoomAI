@@ -7,8 +7,12 @@ import tribal from "@/assets/tribal.png";
 import tropical from "@/assets/tropical.png";
 import vintage from "@/assets/vintage.png";
 import Image from 'next/image';
+import { useTheme } from '@/store/useStore';
 
 function ThemeOptions() {
+
+    const setTheme=useTheme((state:any)=>state.setTheme)
+
     const themes = [
         { value: "coastal", imgUrl: coastal },
         { value: "modern", imgUrl: modern },
@@ -21,7 +25,7 @@ function ThemeOptions() {
     function handleClick(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
         document.querySelector(".selected")?.classList.remove("selected");
         e.currentTarget.classList.add("selected")
-        
+        setTheme(e.currentTarget.lastChild?.textContent);
     }
 
   return (

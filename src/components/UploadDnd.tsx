@@ -2,10 +2,12 @@
 import React, { useState } from "react";
 import { UploadDropzone } from "@bytescale/upload-widget-react";
 import Image from "next/image";
+import { useImage } from "@/store/useStore";
 
 function UploadDnd() {
   const [preview, setPreview] = useState<string>();
   const [loading, setLoading] = useState<boolean>(true);
+  const setImageUrl=useImage((state:any)=>state.setImageUrl)
 
   const options = {
     apiKey: process.env.NEXT_PUBLIC_BYTESCALE_API_KEY,
@@ -26,7 +28,7 @@ function UploadDnd() {
     if (uploadedFiles.length !== 0) {
       const imageUrl = uploadedFiles[0].fileUrl;
       setPreview(imageUrl);
-      console.log(imageUrl);
+      setImageUrl(imageUrl);
     }
   }
 

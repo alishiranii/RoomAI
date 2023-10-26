@@ -4,6 +4,8 @@ import UploadDnd from "@/components/UploadDnd";
 import Image from "next/image";
 import couch from "@/assets/couch.svg";
 import React from "react";
+import GenerateBtn from "@/components/GenerateBtn";
+import PreviewImg from "@/components/PreviewImg";
 
 function page() {
   return (
@@ -22,7 +24,7 @@ function page() {
             <h3 className="font-bold text-xl">Select Room Theme</h3>
             <ThemeOptions/>
           </div>
-          <button className="p-5 w-full bg-rose-500 text-white rounded-lg hover:opacity-90 active:scale-[.98] transition">Generate Room</button>
+          <GenerateBtn/>
         </div>
         <div className="md:w-2/3 flex flex-col items-center">
           <div className="md:flex hidden flex-col gap-5 text-center">
@@ -35,9 +37,7 @@ function page() {
               to redesign.
             </p>
           </div>
-          <div className="md:w-[500px] w-[350px] h-[200px] my-auto md:h-[300px] bg-slate-500 rounded-lg flex items-center justify-center">
-            <Image width={100} height={100} src={couch} alt="couch"/>
-          </div>
+          <PreviewImg/>
         </div>
       </div>
     </div>
