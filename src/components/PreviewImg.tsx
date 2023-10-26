@@ -17,8 +17,8 @@ function PreviewImg() {
         <Image width={100} height={100} src={couch} alt="couch" />
       </div>
     ) : (
-      <div className="md:w-[500px] w-[350px] h-[200px] my-auto md:h-[300px]">
-        <Image src={output} alt="output" width={500} height={300}/>
+      <div className="my-auto">
+        <img src={output} alt="output" className='rounded-lg object-cover'/>
       </div>
     );
 }

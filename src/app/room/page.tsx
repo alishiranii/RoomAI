@@ -26,7 +26,7 @@ function page() {
           </div>
           <GenerateBtn/>
         </div>
-        <div className="md:w-2/3 flex flex-col items-center">
+        <div className="md:w-2/3 flex flex-col items-center pb-10">
           <div className="md:flex hidden flex-col gap-5 text-center">
             <h1 className="text-6xl font-bold">
               Redesign your <span className="text-rose-500">room</span> in
