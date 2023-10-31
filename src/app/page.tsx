@@ -9,8 +9,7 @@ export default function Home() {
               <h3 className="font-bold text-6xl lg:text-7xl !leading-tight">
                 Design, <br className="hidden md:block" />
                 <RoughNotation type="highlight" show color="pink">
-                  reimagined
-                </RoughNotation>{" "}
+                  reimagined </RoughNotation>{" "}
                 with AI
               </h3>
               <Link href={"/room"}>

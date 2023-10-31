@@ -1,23 +1,28 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Link from 'next/link'
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Link from "next/link";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'RoomAI',
-  description: 'Generate rooms in seconds with AI',
-}
+  title: "RoomAI",
+  description: "Generate rooms in seconds with AI",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={inter.className + " bg-slate-100 container mx-auto flex flex-col h-screen"}>
+      <body
+        className={
+          inter.className +
+          " bg-slate-100 container mx-auto flex flex-col h-screen"
+        }
+      >
         <header className="flex justify-between items-center p-5 lg:py-10">
           <Link href="/">
             <h3 className="font-bold text-4xl">RoomAI</h3>
