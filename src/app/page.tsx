@@ -4,7 +4,7 @@ import { RoughNotation } from "react-rough-notation";
 
 export default function Home() {
   return (
-          <main className="my-auto flex flex-col gap-20 lg:flex-row items-center">
+          <main className="my-auto flex flex-col gap-20 lg:flex-row px-5 items-center">
             <div className="flex flex-col gap-14 lg:gap-20 items-center text-center lg:text-left lg:items-start lg:w-1/2">
               <h3 className="font-bold text-6xl lg:text-7xl !leading-tight">
                 Design, <br className="hidden md:block" />
