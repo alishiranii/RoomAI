@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@bytescale/upload-widget-react": "^4.11.0",
+    "@clerk/nextjs": "^4.26.2",
     "next": "^13.5.5",
     "react": "^18.2.0",
     "react-compare-slider": "^2.2.0",
